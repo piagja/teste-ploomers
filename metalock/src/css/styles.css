@@ -1,0 +1,41 @@
+:root {
+  --green: #009879;
+  --background: #ececec;
+  --thead-tr-color: #ffffff;
+  --tbody-tr-color: #dddddd;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--background);
+}
+
+.content-table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  min-width: 400px;
+  margin: 25px 0;
+}
+
+.content-table thead tr {
+  background: var(--green);
+  color: var(--thead-tr-color);
+  text-align: center;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid var(--tbody-tr-color);
+}
