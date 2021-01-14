@@ -17,11 +17,33 @@ body {
   background-color: var(--background);
 }
 
+ul {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* estilos do navbar */
+
+
+/* estilos para a tabela */
+
 .content-table {
   border-collapse: collapse;
-  font-size: 0.9em;
-  min-width: 400px;
+  font-size: 1rem;
+  min-width: 500px;
   margin: 25px 0;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .content-table thead tr {
@@ -37,9 +59,19 @@ body {
 }
 
 .content-table tbody tr {
-  border-bottom: 1px solid var(--tbody-tr-color);
+  border-bottom: 2px solid var(--tbody-tr-color);
 }
 
 .content-table tbody tr:nth-of-type(even) {
   background-color: #f3f3f3;
+}
+
+.content-table tr:last-of-type {
+  border-bottom: 2px solid var(--green);
+}
+
+/* highlight nos itens, se necessário */
+.content-table tbody tr.highlight {
+  font-weight: bold;
+  color: var(--green);
 }
