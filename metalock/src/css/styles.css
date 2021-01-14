@@ -12,7 +12,8 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 100vh;
+  height: 100%;
+  width: 100%;
   font-family: 'Lato', sans-serif;
 }
 
@@ -40,23 +41,27 @@ ul {
   list-style: none;
 }
 
-img {
-  height: 125px;
-}
-
 .page-header {
   background: var(--page-header);
   box-shadow: 5px 7px 3px 2px var(--background);
+}
+
+.page-header img {
+  height: 125px;
 }
 
 .page-header ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 85px;
 }
 
 /* estilos para a main */
+
+h1 {
+  margin-top: 35px;
+}
 
 .page-main {
   display: flex;
@@ -68,10 +73,6 @@ img {
 
 
 /* estilos para a tabela */
-
-h1 {
-  margin-top: 25px;
-}
 
 caption {
   font-size: 2rem;
@@ -114,6 +115,36 @@ tr {
   border-bottom: 2px solid var(--main);
 }
 
+/* estilos para o sobre.html */
+
+.about {
+  margin-top: 0;
+  width: 50%;
+  letter-spacing: 0.3px;
+  word-spacing: 0.7px;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.quotes {
+  font-size: 1.6rem;
+  margin-right: 2px;
+}
+
+.div-clients-wrapper {
+  width: 100%;
+}
+
+.div-clients {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.div-clients img {
+  height: 100px;
+  margin: 50px 0;
+}
+
 /* estilos para o rodapé */
 
 footer {
@@ -122,7 +153,7 @@ footer {
   background-color: var(--background);
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .footer-content {
