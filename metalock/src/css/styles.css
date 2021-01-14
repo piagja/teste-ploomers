@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root {
+  --main: #023E7D;
+  --background: #979dac6b;
+  --light-blue: #b9cdf8;
+  --mid-blue: #192e5c;
+  --page-header: #023d7d1b;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+/* wrapper geral */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* estilos cabeçalho */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list__item {
+  color: var(--mid-blue);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.page-header {
+  background: var(--page-header);
+  box-shadow: 5px 7px 3px 2px var(--background);
+}
+
+.page-header img {
+  height: 125px;
+}
+
+.page-header ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 85px;
+}
+
+/* estilos para a main */
+
+h1 {
+  margin-top: 35px;
+}
+
+.page-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+/* estilos para a tabela */
+
+caption {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content-table {
+  border-collapse: collapse;
+  font-size: 1rem;
+  min-width: 400px;
+  margin: 25px auto;
+  border-radius: 15px 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+tr {
+  text-align: center;
+}
+
+.content-table thead tr {
+  background: var(--main);
+  color: var(--light-blue);
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 2px solid var(--silver);
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: var(--background);
+}
+
+.content-table tr:last-of-type {
+  border-bottom: 2px solid var(--main);
+}
+
+/* estilos para o sobre.html */
+
+.about {
+  margin-top: 0;
+  width: 50%;
+  letter-spacing: 0.3px;
+  word-spacing: 0.7px;
+  font-size: 20px;
+  line-height: 2rem;
+}
+
+.quotes {
+  font-size: 1.6rem;
+  margin-right: 2px;
+}
+
+.div-clients-wrapper {
+  width: 100%;
+}
+
+.div-clients {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.div-clients img {
+  height: 100px;
+  margin: 50px 0;
+}
+
+/* estilos para o rodapé */
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  text-align: center;
+  font-weight: bold;
+}
