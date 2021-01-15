@@ -1,0 +1,34 @@
+:root {
+  --bar: rgba(116, 38, 38, 0.7);
+  --background: #ffe9d8;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--background);
+}
+
+.logotipo {
+  height: 450px;
+  width: 750px;
+}
+
+.capa {
+  margin-top: 25px;
+  height: 80vh;
+}
+
+.bar {
+  height: 20px;
+  width: 100%;
+  background-color: var(--bar);
+}
