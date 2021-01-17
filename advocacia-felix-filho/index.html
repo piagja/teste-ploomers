@@ -4,26 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/css/style.css">
-  <title>Advocacia Felix Filho</title>
+  <title>Advocacia Félix Filho</title>
 </head>
 <body>
   
   <header>
-    <nav>
-      <ul>
-        <li><img src="./src/assets/img/logotipo.png" alt="Logotipo Advocacia Felix Filho" class='logotipo'></li>
-        <li>Contato</li>
-        <li>Sobre</li>
+
+    <nav class='navbar'>
+
+      <ul class='navbar-list'>
+
+        <div>
+          <a href='#'><img src="./src/assets/img/logotipo.png" alt="Logotipo"></a>
+        </div>
+
+        <li class='navbar-list__item'><a href='#'>Sobre</a></li>
+        <li class='navbar-list__item'><a href='#our-clients'>Nossos Clientes</a></li>
+        <li class='navbar-list__item'><a href='#'>Soluções</a></li>
+        <li class='navbar-list__item'><a href='#'>Contato</a></li>
+
       </ul>
+
     </nav>
+
   </header>
 
-  <div class="bar"></div>
-
   <main>
-    <img src='./src/assets/img/capa.jpg' alt='Capa' class='capa'/>
-    <h1><a href='./about.html'>Solução em primeira mão!</a></h1>
+
+    <div class='square'>
+      <p>Solução e Desempenho na <span class='strong'>medida</span> que nossos clientes desejarem.</p>
+      <h1>" Solução em primeira mão "</h1>
+      <p>Nosso trabalho de assessoria e consultoria busca viabilizar o acesso ao direito através de medidas eficientes, cultivando a confiança do cliente através de um trabalho sério, competente e eficaz, baseado na eficiência, agilidade, competência responsabilidade e transparência.</p>
+      <hr>
+    </div>
+    
+    
   </main>
+
+  <section>
+    <h2 id='our-clients'>Nossos Clientes</h2>
+    
+    <div class='our-clients'>
+      <div class='our-clients__img'>
+        <img src="./src/assets/img/cliente-1.png" alt="Cliente 1">
+      </div>
+
+      <div class='our-clients__img'>
+        <img src="./src/assets/img/cliente-2.png" alt="Cliente 2">
+      </div>
+
+      <div class='our-clients__img'>
+        <img src="./src/assets/img/cliente-3.png" alt="Cliente 3">
+      </div>
+
+      <div class='our-clients__img'>
+        <img src="./src/assets/img/cliente-4.png" alt="Cliente 4">
+      </div>
+
+    </div>
+
+  </section>
 
 </body>
 </html>
