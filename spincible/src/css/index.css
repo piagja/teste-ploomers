@@ -1,3 +1,7 @@
+:root {
+  --title: #4f9283;
+}
+
 /* reset css parcial */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -33,7 +37,6 @@ ol, ul {
 }
 
 .grid-container {
-  height: 100vw;
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 300px 1fr 300px;
@@ -42,20 +45,117 @@ ol, ul {
     'sidenav main'
     'sidenav footer'
   ;
+
+  box-shadow: 22px 1px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
 }
+
+/* sidenav e header */
 
 nav {
   grid-area: sidenav;
+  box-shadow: 22px 1px 25px rgba(0, 0, 0, 0.3);
 }
 
 header {
   grid-area: header;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+header h1 {
+  font-size: 5rem;
+  letter-spacing: 28px;
+  color: var(--title);
+  text-shadow: 0px 3px 0px rgba(0, 0, 0, 1);
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 250px;
+}
+
+li {
+  font-size: 21px;
+}
+
+/* main */
 
 main {
   grid-area: main;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container img {
+  height: 500px;
+  border-radius: 50%;
+  margin-bottom: 26px;
+  box-shadow: 2px 2px 2px 5px rgba(60, 10, 40, 0.8);
+  padding: 2px;
+}
+
+main h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+}
+
+main p {
+  text-align: center;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  line-height: 1.4rem;
+}
+
+main h2 {
+  font-size: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+}
+
+.box-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.box-area p {
+  width: 50%;
+}
+
+/* footer */
 
 footer {
   grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.8rem;
+}
+
+footer p {
+  word-spacing: 2px;
+  letter-spacing: 3px;
 }
